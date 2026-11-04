@@ -308,12 +308,57 @@ footer img.ft{width:min(260px,70vw);margin:auto;filter:var(--ff)}
 .mapinfo p{margin:0 0 20px}
 .mb{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
 .mb .btn.o{margin-left:0}
+/* ===== ADAPTACIÓN MÓVIL ===== */
+.burger{display:none}
+@media(max-width:760px){
+html,body{overflow-x:clip}
+section{padding:72px 6vw}
+nav{gap:10px;padding:10px 5vw}
+nav .brand img{height:36px}
+.navmenu{margin-left:auto;padding:9px 16px;font-size:.75rem}
+.burger{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;padding:0 11px;border:1.5px solid var(--green);border-radius:50%;background:none;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--green);border-radius:2px}
+nav.open{background:var(--bg)}
+nav.open ul{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:6px 6vw 16px;background:var(--bg);box-shadow:0 18px 30px #0002}
+nav.open ul a{display:block;padding:14px 0;border-bottom:1px solid #8a9a9433;font-size:1rem}
+nav.open ul li:last-child a{border:0}
+#hero{min-height:92svh;padding-top:110px}
+#hero .btn{display:block;text-align:center;margin:0 0 12px}
+#hero .btn.o{margin-left:0}
+#hero p.lead{font-size:1.3rem}
+#scroll{display:none}
+.rv.l,.rv.r{transform:translateY(40px)}
+.mq div{font-size:1.15rem;gap:30px}
+.stats{gap:10px}.stats b{font-size:1.9rem}.stats span{font-size:.75rem}
+.collage{max-width:380px;margin:0 auto;padding:10px 8px 34px}
+.pol.a{left:-3%}.pol.b{right:-3%}
+.pi{padding:7px 7px 6px}.pi span{width:60px;height:60px;font-size:1.9rem}.pi em{font-size:.95rem}
+.badge{width:90px;height:90px;right:0}
+.steps{margin-top:36px;gap:30px}
+.stage{position:static;width:min(62vw,250px);margin:0 auto}
+.stage .n{font-size:7rem}
+.step{padding:20px}.step.on{transform:none}.step h3{font-size:1.4rem}
+.bx{padding:24px 22px 12px}
+.mo{padding:26px 22px}.mo h3{font-size:2.2rem}
+.cf{padding:26px 20px}
+.info div{padding:22px}
+.mapv{min-height:230px}
+.mapinfo{padding:26px 22px}
+.mb{align-items:stretch}.mb .btn{text-align:center}
+#pet{padding:64px 6vw}
+footer{padding:50px 6vw calc(40px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:380px){
+#hero h1{font-size:2.4rem}
+.navmenu{padding:8px 12px}
+nav .brand img{height:32px}
+}
 </style>
 </head>
 <body>
 <div id="pre"><div class="in"><div class="logo"><img data-logo alt="Forasteiro Café" class="lg"></div><div class="st" id="st">Amasando…</div><div class="bar"><i></i></div></div></div>
 <div id="prog"></div><div id="cur"></div>
-<nav id="nav"><a class="brand" href="#hero" aria-label="Forasteiro Café"><img data-logo alt="Forasteiro Café" class="lg"></a><ul><li><a href="#historia">Historia</a></li><li><a href="#proceso">Proceso</a></li><li><a href="#carta">Carta</a></li><li><a href="#eventos">Eventos</a></li><li><a href="#contacto">Contacto</a></li></ul><a class="navmenu" href="#carta">Ver menú</a></nav>
+<nav id="nav"><a class="brand" href="#hero" aria-label="Forasteiro Café"><img data-logo alt="Forasteiro Café" class="lg"></a><ul><li><a href="#historia">Historia</a></li><li><a href="#proceso">Proceso</a></li><li><a href="#carta">Carta</a></li><li><a href="#eventos">Eventos</a></li><li><a href="#contacto">Contacto</a></li></ul><a class="navmenu" href="#carta">Ver menú</a><button class="burger" id="burger" aria-label="Abrir navegación" aria-expanded="false"><span></span><span></span><span></span></button></nav>
 
 <section id="hero"><div class="wrap">
 <h1 id="h1"><span class="w">Bagels</span><span class="w">hechos en casa</span></h1>
@@ -351,7 +396,7 @@ footer img.ft{width:min(260px,70vw);margin:auto;filter:var(--ff)}
 <div class="step" data-n="4"><h3>Hervir y hornear</h3><p>Un baño rápido y al horno hasta dorar: ahí nace la corteza brillante.</p></div>
 <div class="step" data-n="5"><h3>Rellenar</h3><p>Ingredientes también elaborados en casa, listos para morder.</p></div>
 </div></div></div></section>
- 
+
 <section id="carta"><div class="wrap">
 <span class="tag rv">La carta</span><h2 class="rv">Para comer<br>y para beber</h2>
 <div class="board"><div class="bc"><div class="bx"><h3>Bagels</h3><div class="br"><b>El Clásico</b><span>4,50 €</span><p>Queso crema y jamón cocido</p></div><div class="br"><b>El Español</b><span>4,50 €</span><p>Tomate, aceite de oliva y jamón serrano</p></div><div class="br"><b>El Forasteiro</b><span>4,70 €</span><p>Signature Bagel con ricotta y confit de tomates</p></div><div class="br"><b>Tamago-Bagel</b><span>5,00 €</span><p>Relleno de ensalada de huevo, estilo japonés</p></div><div class="br"><b>Dulce</b><span>4,00 €</span><p>Bagel de arándanos, queso crema y mermelada casera</p></div></div></div><div class="bc"><div class="bx"><h3>Tortillas</h3><div class="br"><b>Cosmos</b><span>2,20 €</span><p>En honor a las clásicas tortillas del Bar Cosmos que muchas generaciones recuerdan con tanto cariño</p></div><div class="br"><b>Especial</b><span>3,30 €</span><p>Tortilla con jamón y queso</p></div></div><div class="bx"><h3>Tostas</h3><div class="br"><b>La Clásica</b><span>2,50 €</span><p>Tosta de tomate y AOVE</p></div><div class="br"><b>La Clásica con jamón</b><span>4,00 €</span><p>Tosta de tomate y AOVE con jamón</p></div><div class="br"><b>Dulce</b><span>2,50 €</span><p>Mantequilla y mermelada</p></div></div></div><div class="bc"><div class="bx"><h3>Café</h3><div class="br"><b>Espresso</b><span>1,30 €</span></div><div class="br"><b>Cortado</b><span>1,30 €</span></div><div class="br"><b>Café con leche</b><span>1,50 €</span></div><div class="br"><b>Manchado</b><span>1,70 €</span></div><h4>Café de especialidad</h4><div class="br"><b>Matcha latte</b><span>4,00 €</span></div><div class="br"><b>Salty Canadian</b><span>4,00 €</span><p>Espresso, sirope de arce, mantequilla, sal, leche</p></div><div class="br"><b>Latte de arándanos</b><span>3,50 €</span><p>Espresso, sirope de arándanos, leche</p></div></div></div></div>
@@ -463,6 +508,11 @@ const b=$('button[type=submit]',cf);b.textContent='Preparando…';
 const body='Hola Forasteiro,\n\n'+$('#ft').value+'\n\n— '+$('#fn').value+' ('+$('#fe').value+')';
 setTimeout(()=>{const a=document.createElement('a');a.href='mailto:hola@forasteiro.es?subject='+encodeURIComponent($('#fm').value+' · web')+'&body='+encodeURIComponent(body);document.body.appendChild(a);a.click();a.remove();cf.classList.add('sent');b.textContent='Enviar mensaje ✉️'},800)});
 $('#again').onclick=()=>{cf.classList.remove('sent');cf.reset()};
+</script>
+<script>
+const bgr=$('#burger');
+bgr.onclick=()=>{const o=$('#nav').classList.toggle('open');bgr.setAttribute('aria-expanded',o)};
+$$('#nav ul a').forEach(a=>a.addEventListener('click',()=>{$('#nav').classList.remove('open');bgr.setAttribute('aria-expanded','false')}));
 </script>
 </body>
 </html>
