@@ -275,6 +275,10 @@ footer img.ft{width:min(260px,70vw);margin:auto;filter:var(--ff)}
 .mnb small{color:var(--muted)}
 .pane .it .e{display:none}
 .pane .it{transform:none!important}
+.it .pr{display:block;margin-top:14px;font:700 1.35rem Oswald;color:var(--rust)}
+.mns .r{display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:baseline}
+.mns .r p{grid-column:1/-1}
+.mns .pp{font:700 1.1rem Oswald;color:var(--rust);white-space:nowrap}
 </style>
 </head>
 <body>
@@ -321,12 +325,13 @@ footer img.ft{width:min(260px,70vw);margin:auto;filter:var(--ff)}
 
 <section id="carta"><div class="wrap">
 <span class="tag rv">La carta</span><h2 class="rv">Para comer<br>y para beber</h2>
-<div class="tabs rv" id="tabs"><button class="on" data-t="0">Bagels</button><button data-t="1">Tostas y tortilla</button><button data-t="2">Café</button><button data-t="3">Matcha</button></div>
-<div class="pane on"><div class="it" style="--i:0"><div class="e">🥯</div><h3>Bagels artesanos</h3><p>Masa y rellenos elaborados a mano, con una amplia variedad de propuestas.</p></div><div class="it" style="--i:1"><div class="e">🥬</div><h3>Rellenos caseros</h3><p>Ingredientes preparados en el propio local, nada industrial.</p></div><div class="it" style="--i:2"><div class="e">🧀</div><h3>Dulces y salados</h3><p>Pregunta por las propuestas de temporada.</p></div></div>
-<div class="pane"><div class="it" style="--i:0"><div class="e">🍞</div><h3>Tostas rumanas</h3><p>Recetas de inspiración rumana, el sello personal de Andra.</p></div><div class="it" style="--i:1"><div class="e">🍳</div><h3>Tortilla “Cosmos”</h3><p>Homenaje al antiguo dueño del local, fiel a la receta de siempre.</p></div></div>
-<div class="pane"><div class="it" style="--i:0"><div class="e">☕</div><h3>Café de especialidad</h3><p>Café con carácter, preparado con cuidado para acompañar tu bagel.</p></div><div class="it" style="--i:1"><div class="e">🥛</div><h3>Con leche</h3><p>Cremosos y suaves para empezar la mañana.</p></div></div>
-<div class="pane"><div class="it" style="--i:0"><div class="e">🍵</div><h3>Matcha de Japón</h3><p>Traído directamente de Japón y servido en auténticos cuencos japoneses.</p></div><div class="it" style="--i:1"><div class="e">🧊</div><h3>Frío o caliente</h3><p>Pregunta por las versiones de temporada.</p></div></div>
-<button class="btn bigmenu" id="openMenu2">📖 Abrir el menú</button><p class="note rv">Carta orientativa. Para ver la carta completa con precios, consulta las historias destacadas «El Menú» en <a href="https://www.instagram.com/forasteirocafe/" style="color:var(--rust)">@forasteirocafe</a>.</p>
+<div class="tabs rv" id="tabs"><button class="on" data-t="0">Bagels</button><button data-t="1">Tortillas</button><button data-t="2">Tostas</button><button data-t="3">Café</button><button data-t="4">Especialidad</button></div>
+<div class="pane on"><div class="it" style="--i:0"><h3>El Clásico</h3><p>Queso crema y jamón cocido</p><span class="pr">4,50 €</span></div><div class="it" style="--i:1"><h3>El Español</h3><p>Tomate, aceite de oliva y jamón serrano</p><span class="pr">4,50 €</span></div><div class="it" style="--i:2"><h3>El Forasteiro</h3><p>Signature Bagel con ricotta y confit de tomates</p><span class="pr">4,70 €</span></div><div class="it" style="--i:3"><h3>Tamago-Bagel</h3><p>Relleno de ensalada de huevo, estilo japonés</p><span class="pr">5,00 €</span></div><div class="it" style="--i:4"><h3>Dulce</h3><p>Bagel de arándanos, queso crema y mermelada casera</p><span class="pr">4,00 €</span></div></div>
+<div class="pane"><div class="it" style="--i:0"><h3>Cosmos</h3><p>En honor a las clásicas tortillas del Bar Cosmos que muchas generaciones recuerdan con tanto cariño</p><span class="pr">2,20 €</span></div><div class="it" style="--i:1"><h3>Especial</h3><p>Tortilla con jamón y queso</p><span class="pr">3,30 €</span></div></div>
+<div class="pane"><div class="it" style="--i:0"><h3>La Clásica</h3><p>Tosta de tomate y AOVE</p><span class="pr">2,50 €</span></div><div class="it" style="--i:1"><h3>La Clásica con jamón</h3><p>Tosta de tomate y AOVE con jamón</p><span class="pr">4,00 €</span></div><div class="it" style="--i:2"><h3>Dulce</h3><p>Mantequilla y mermelada</p><span class="pr">2,50 €</span></div></div>
+<div class="pane"><div class="it" style="--i:0"><h3>Espresso</h3><span class="pr">1,30 €</span></div><div class="it" style="--i:1"><h3>Cortado</h3><span class="pr">1,30 €</span></div><div class="it" style="--i:2"><h3>Café con leche</h3><span class="pr">1,50 €</span></div><div class="it" style="--i:3"><h3>Manchado</h3><span class="pr">1,70 €</span></div></div>
+<div class="pane"><div class="it" style="--i:0"><h3>Matcha latte</h3><span class="pr">4,00 €</span></div><div class="it" style="--i:1"><h3>Salty Canadian</h3><p>Espresso, sirope de arce, mantequilla, sal, leche</p><span class="pr">4,00 €</span></div><div class="it" style="--i:2"><h3>Latte de arándanos</h3><p>Espresso, sirope de arándanos, leche</p><span class="pr">3,50 €</span></div></div>
+<button class="btn bigmenu" id="openMenu2">📖 Abrir el menú</button><p class="note rv">Todos nuestros bagels son caseros y se sirven con ensalada y tomates cherry.</p>
 </div></section>
 
 <section id="eventos"><canvas id="leaves"></canvas><div class="wrap" style="position:relative">
@@ -427,7 +432,7 @@ col.addEventListener('pointermove',e=>{const r=col.getBoundingClientRect(),x=(e.
 col.addEventListener('pointerleave',()=>['--rx','--ry','--mx','--my'].forEach(p=>col.style.removeProperty(p)));
 // menu viewer
 const mm=$('#menu');let built=false;
-function buildMenu(){if(built)return;built=true;const tb=$$('#tabs button'),ps=$$('.pane'),T=$('#mtabs'),B=$('#mbody');tb.forEach((b,i)=>{const id='mc'+i,a=document.createElement('a');a.href='#'+id;a.textContent=b.textContent;a.onclick=e=>{e.preventDefault();$('#'+id).scrollIntoView({block:'start'})};T.appendChild(a);const d=document.createElement('div');d.className='mns';d.id=id;const h=document.createElement('h3');h.textContent=b.textContent;d.appendChild(h);$$('.it',ps[i]).forEach(x=>{const r=document.createElement('div');r.className='r';const t=document.createElement('b');t.textContent=$('h3',x).textContent;const q=document.createElement('p');q.textContent=$('p',x).textContent;r.append(t,q);d.appendChild(r)});B.appendChild(d)});const n=document.createElement('small');n.textContent='Carta orientativa. Precios y carta del día en Instagram: @forasteirocafe.';B.appendChild(n)}
+function buildMenu(){if(built)return;built=true;const tb=$$('#tabs button'),ps=$$('.pane'),T=$('#mtabs'),B=$('#mbody');tb.forEach((b,i)=>{const id='mc'+i,a=document.createElement('a');a.href='#'+id;a.textContent=b.textContent;a.onclick=e=>{e.preventDefault();$('#'+id).scrollIntoView({block:'start'})};T.appendChild(a);const d=document.createElement('div');d.className='mns';d.id=id;const h=document.createElement('h3');h.textContent=b.textContent;d.appendChild(h);$$('.it',ps[i]).forEach(x=>{const r=document.createElement('div');r.className='r';const t=document.createElement('b');t.textContent=$('h3',x).textContent;const pr=document.createElement('span');pr.className='pp';pr.textContent=$('.pr',x).textContent;r.append(t,pr);const pe=$('p',x);if(pe){const q=document.createElement('p');q.textContent=pe.textContent;r.appendChild(q)}d.appendChild(r)});B.appendChild(d)});const n=document.createElement('small');n.textContent='Todos nuestros bagels son caseros y se sirven con ensalada y tomates cherry.';B.appendChild(n)}
 function spy(){const secs=$$('.mns'),links=$$('#mtabs a');let k=0;secs.forEach((s,i)=>{if(s.offsetTop-140<=mm.scrollTop)k=i});links.forEach((a,i)=>{a.classList.toggle('on',i===k);if(i===k&&a.scrollIntoView)a.parentNode.scrollLeft=a.offsetLeft-20})}
 function openM(){buildMenu();mm.classList.add('open');document.body.style.overflow='hidden';mm.scrollTop=0;spy();$('#closeMenu').focus()}
 function closeM(){mm.classList.remove('open');document.body.style.overflow=''}
